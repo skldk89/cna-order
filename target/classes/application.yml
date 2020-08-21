@@ -37,6 +37,9 @@ logging:
     org.springframework.cloud: debug
 server:
   port: 8081
+api:
+  url:
+    delivery: http://delivery:8082
 ---
 
 spring:
@@ -62,3 +65,7 @@ spring:
         event-out:
           destination: shopmall
           contentType: application/json
+
+api:
+  url:
+      delivery: http://delivery:8080
